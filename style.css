@@ -546,3 +546,117 @@ footer a:hover {
     margin-right: auto;
   }
 }
+
+/* =========================
+   AEON'S LAW — SCAN PAGE
+========================= */
+
+.scan-body {
+  background: #f7f5f0;
+  color: #111;
+  min-height: 100vh;
+}
+
+.scan-page {
+  width: min(100% - 40px, 600px);
+  margin: 0 auto;
+  padding: 55px 0 40px;
+  text-align: center;
+}
+
+.scan-brand {
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+
+.scan-blue {
+  color: #1268e8;
+}
+
+.scan-title {
+  font-size: clamp(2.5rem, 11vw, 4.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin-bottom: 28px;
+}
+
+.scan-intro {
+  max-width: 520px;
+  margin: 0 auto 38px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.scan-buttons {
+  display: grid;
+  gap: 14px;
+}
+
+.scan-button {
+  display: block;
+  padding: 18px 20px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.scan-button:hover {
+  opacity: 0.85;
+}
+
+.scan-button-secondary {
+  background: transparent;
+  color: #111;
+  border: 2px solid #111;
+}
+
+.scan-message {
+  margin-top: 55px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+
+.scan-footer {
+  margin-top: 55px;
+  font-size: 0.8rem;
+  color: #666;
+}
+/* =========================
+   SCAN PAGE FOOTER
+========================= */
+
+.scan-footer {
+  margin-top: 55px;
+  background: #0b1d2d;
+  padding: 45px 20px 35px;
+  text-align: center;
+}
+
+.scan-logo {
+  display: block;
+  width: 260px;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto 24px;
+}
+
+.scan-website {
+  display: inline-block;
+  color: #d4af37;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+}
+
+.scan-website:hover {
+  opacity: 0.75;
+}
