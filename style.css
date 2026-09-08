@@ -660,3 +660,223 @@ footer a:hover {
 .scan-website:hover {
   opacity: 0.75;
 }
+
+/* =========================
+   AEON'S LAW SHOP SECTION
+========================= */
+
+.shop-section {
+  background: #f3efe6;
+  padding: 90px 20px;
+  color: #111;
+}
+
+.shop-inner {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.shop-kicker {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  margin-bottom: 14px;
+}
+
+.shop-section h2 {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin-bottom: 22px;
+}
+
+.shop-blue {
+  color: #1268e8;
+}
+
+.shop-intro {
+  max-width: 650px;
+  margin: 0 auto 50px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.shop-card {
+  background: #fff;
+  text-align: left;
+  overflow: hidden;
+}
+
+.shop-image-placeholder {
+  min-height: 420px;
+  background: #e9e3d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  text-align: center;
+}
+
+.shop-card-content {
+  padding: 24px;
+}
+
+.shop-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.shop-card p {
+  margin-bottom: 22px;
+  color: #666;
+}
+
+.shop-button {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 14px 20px;
+}
+
+.shop-button:hover {
+  opacity: 0.82;
+}
+
+.shop-message {
+  margin-top: 50px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+@media (max-width: 760px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-image-placeholder {
+    min-height: 320px;
+  }
+}
+
+/* =========================
+   AEON'S LAW SHOP SECTION
+========================= */
+
+.shop-section {
+  background: #f3efe6;
+  padding: 90px 20px;
+  color: #111;
+}
+
+.shop-inner {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.shop-kicker {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  margin-bottom: 14px;
+}
+
+.shop-section h2 {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin-bottom: 22px;
+}
+
+.shop-blue {
+  color: #1268e8;
+}
+
+.shop-intro {
+  max-width: 650px;
+  margin: 0 auto 50px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.shop-card {
+  background: #fff;
+  text-align: left;
+  overflow: hidden;
+}
+
+.shop-image-placeholder {
+  min-height: 420px;
+  background: #e9e3d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  text-align: center;
+}
+
+.shop-card-content {
+  padding: 24px;
+}
+
+.shop-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 8px;
+}
+
+.shop-card p {
+  margin-bottom: 22px;
+  color: #666;
+}
+
+.shop-button {
+  display: inline-block;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 14px 20px;
+}
+
+.shop-button:hover {
+  opacity: 0.82;
+}
+
+.shop-message {
+  margin-top: 50px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+@media (max-width: 760px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-image-placeholder {
+    min-height: 320px;
+  }
+}
