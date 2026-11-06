@@ -895,3 +895,39 @@ p { margin-bottom: 18px; }
     animation-duration: .01ms !important;
   }
 }
+
+/* SHELTER WALK FOR HOME */
+
+.walk-section {
+  background: #171717;
+  color: #ffffff;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.walk-section h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.15;
+  margin-bottom: 30px;
+}
+
+.walk-section h2 em {
+  color: #e9c9a4;
+}
+
+.walk-section p {
+  max-width: 680px;
+  margin: 0 auto 22px;
+  line-height: 1.8;
+}
+
+.walk-section .button-row {
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.walk-section .small-note {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
