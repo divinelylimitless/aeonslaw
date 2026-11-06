@@ -931,3 +931,29 @@ p { margin-bottom: 18px; }
   font-size: 0.85rem;
   opacity: 0.75;
 }
+
+/* WALK FOR HOME IMAGES */
+
+.walk-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.walk-gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .walk-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .walk-gallery img {
+    height: auto;
+  }
+}
