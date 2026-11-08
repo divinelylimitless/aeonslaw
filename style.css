@@ -957,3 +957,204 @@ p { margin-bottom: 18px; }
     height: auto;
   }
 }
+
+
+/* ADVOCACY AND SUPPORT */
+
+.advocacy-section {
+  background: #171717;
+  color: #ffffff;
+  padding: 90px 20px;
+}
+
+.advocacy-section h2 em {
+  color: #d9be91;
+}
+
+.advocacy-intro {
+  max-width: 720px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+.advocacy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 35px 0;
+}
+
+.advocacy-card {
+  padding: 30px;
+  border: 1px solid #66583f;
+  border-radius: 8px;
+  background: #222222;
+}
+
+.advocacy-card span {
+  color: #d9be91;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.advocacy-card h3 {
+  margin: 18px 0;
+}
+
+.advocacy-card p {
+  line-height: 1.7;
+}
+
+.advocacy-note {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 650px) {
+  .advocacy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advocacy-section {
+    padding: 60px 20px;
+  }
+}
+
+/* AEON'S LAW — ADVOCACY APPLICATION FORM */
+
+.advocacy-form-section {
+  background: #f7f3ec;
+  color: #171717;
+  padding: 80px 20px;
+}
+
+.advocacy-form-section h2 em {
+  color: #9a7848;
+}
+
+.advocacy-application {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 35px;
+}
+
+.advocacy-application label {
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.advocacy-application input:not([type="checkbox"]),
+.advocacy-application select,
+.advocacy-application textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #b9b0a4;
+  border-radius: 6px;
+  background: #fff;
+  color: #171717;
+  font: inherit;
+  font-size: 16px;
+}
+
+.advocacy-application textarea {
+  resize: vertical;
+}
+
+.advocacy-application input:focus,
+.advocacy-application select:focus,
+.advocacy-application textarea:focus {
+  outline: 2px solid #9a7848;
+  outline-offset: 2px;
+}
+
+.advocacy-application .consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.advocacy-application .consent-label input {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.advocacy-application button {
+  align-self: flex-start;
+  margin-top: 15px;
+}
+
+.form-guidance {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+  .advocacy-form-section {
+    padding: 55px 18px;
+  }
+
+  .advocacy-application button {
+    width: 100%;
+  }
+}
+
+
+/* ADVOCACY FORM — MOBILE IMPROVEMENTS */
+
+@media (max-width: 650px) {
+
+  .advocacy-form-section .container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .advocacy-form-section h2 {
+    font-size: clamp(1.8rem, 8vw, 2.7rem);
+    line-height: 1.12;
+    overflow-wrap: break-word;
+  }
+
+  .advocacy-application {
+    gap: 10px;
+    width: 100%;
+  }
+
+  .advocacy-application input:not([type="checkbox"]),
+  .advocacy-application select,
+  .advocacy-application textarea {
+    min-height: 50px;
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .advocacy-application textarea {
+    min-height: 150px;
+  }
+
+  .advocacy-application label {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .advocacy-application .consent-label {
+    padding: 12px 0;
+  }
+
+  .advocacy-application button[type="submit"] {
+    width: 100%;
+    min-height: 54px;
+    padding: 15px;
+    font-size: 14px;
+    white-space: normal;
+    text-align: center;
+  }
+}

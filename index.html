@@ -26,6 +26,7 @@
       <a href="#priorities">Priorities</a>
       <a href="#parliament">Parliament</a>
       <a href="#campaigns">Campaigns</a>
+      <a href="#advocacy">Advocacy</a>
       <a href="#winter">Shelter</a>
       <a href="#walk-for-home">Walk for Home</a>
       <a href="#mural">Mural</a>
@@ -268,6 +269,151 @@
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+
+<!-- ADVOCACY AND SUPPORT -->
+<section class="section advocacy-section" id="advocacy">
+  <div class="container">
+    <p class="eyebrow">AEON'S LAW • ADVOCACY</p>
+    <h2>YOUR VOICE MATTERS.<br>
+      <em>ACCOUNTABILITY MATTERS.</em>
+    </h2>
+
+    <p class="advocacy-intro">
+      Aeon's Law supports residents in challenging
+      housing injustice and uses lived experience
+      to campaign for systemic change.
+    </p>
+
+    <div class="advocacy-grid">
+      <article class="advocacy-card">
+        <span>01 / INDIVIDUAL SUPPORT</span>
+        <h3>Housing Advocacy</h3>
+        <p>
+          Support with organising evidence, preparing
+          housing complaints, understanding complaint
+          procedures and communicating concerns
+          to housing providers.
+        </p>
+      </article>
+
+      <article class="advocacy-card">
+        <span>02 / COLLECTIVE ACTION</span>
+        <h3>Campaigning & Reform</h3>
+        <p>
+          Bringing recurring housing failures
+          to public attention, gathering evidence
+          of systemic problems and advocating
+          for stronger protections.
+        </p>
+      </article>
+    </div>
+
+    <p class="advocacy-note">
+      Support is subject to availability and case
+      assessment. Aeon's Law is not a law firm,
+      emergency service or substitute for
+      regulated legal advice.
+    </p>
+
+    <div class="button-row">
+      <a class="button button-primary"
+         href="#advocacy-form">
+        Request Advocacy Support
+      </a>
+    </div>
+  </div>
+</section>
+<!-- ADVOCACY APPLICATION FORM -->
+<section class="section advocacy-form-section" id="advocacy-form">
+  <div class="container narrow">
+    <p class="eyebrow">AEON'S LAW • GET SUPPORT</p>
+
+    <h2>REQUEST<br><em>ADVOCACY SUPPORT.</em></h2>
+
+    <p>
+      Tell us about your housing situation and the
+      support you are seeking. Every enquiry will
+      be reviewed before support is offered.
+    </p>
+
+
+<form
+  class="advocacy-application"
+  id="support-request-form"
+  action="https://formspree.io/f/mjyyqbkq"
+  method="POST"
+>
+
+
+  <label for="support-type">What support do you need? *</label>
+  <select id="support-type" name="supportType" required>
+    <option value="">Please select</option>
+    <option value="individual">Individual housing advocacy</option>
+    <option value="campaign">Housing campaigning / systemic injustice</option>
+    <option value="both">Both</option>
+  </select>
+
+  <label for="applicant-name">Full name *</label>
+  <input type="text" id="applicant-name"
+         name="fullName" autocomplete="name" required>
+
+  <label for="applicant-email">Email address *</label>
+  <input type="email" id="applicant-email"
+         name="email" autocomplete="email" required>
+
+  <label for="applicant-phone">Telephone (optional)</label>
+  <input type="tel" id="applicant-phone"
+         name="phone" autocomplete="tel">
+
+  <label for="housing-provider">
+    Council, landlord or housing provider
+  </label>
+  <input type="text" id="housing-provider"
+         name="housingProvider">
+
+  <label for="complaint-stage">Complaint status</label>
+  <select id="complaint-stage" name="complaintStage">
+    <option value="">Please select</option>
+    <option value="not-started">Not yet complained</option>
+    <option value="stage-one">Stage 1 complaint</option>
+    <option value="stage-two">Stage 2 complaint</option>
+    <option value="ombudsman">Ombudsman / external review</option>
+    <option value="other">Other / not applicable</option>
+  </select>
+
+  <label for="housing-issue">
+    Tell us about your situation *
+  </label>
+  <textarea id="housing-issue" name="housingIssue"
+            rows="6" required
+            placeholder="Briefly describe what happened and what support you need."></textarea>
+
+  <p class="form-guidance">
+    Please do not include medical records, identification
+    documents or other sensitive information at this stage.
+  </p>
+
+  <label class="consent-label">
+    <input type="checkbox" name="contactConsent" required>
+    I agree to be contacted about my enquiry and understand
+    that submitting this form does not guarantee advocacy support.
+  </label>
+
+  <button type="submit" class="button button-primary">
+    SUBMIT ADVOCACY REQUEST
+  </button>
+
+  <p class="small-note">
+    This form is not yet connected to a submission service.
+    Do not enter real personal information until secure
+    submission and privacy arrangements are in place.
+  </p>
+
+</form>
+
   </div>
 </section>
 
