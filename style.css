@@ -1158,3 +1158,177 @@ p { margin-bottom: 18px; }
     text-align: center;
   }
 }
+
+/* ==================================
+   AEON'S LAW — CONSENT FORM
+   ================================== */
+
+.consent-page {
+  background: #f7f3ec;
+  color: #1c1c1c;
+  min-height: 100vh;
+}
+
+.consent-section {
+  padding: 70px 20px;
+}
+
+.consent-section .container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.consent-section h1 {
+  font-size: clamp(2rem, 6vw, 3.8rem);
+  line-height: 1.1;
+  overflow-wrap: break-word;
+}
+
+.consent-section h1 em {
+  color: #9a7848;
+}
+
+.consent-intro {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.consent-notice {
+  background: #eee5d7;
+  border-left: 4px solid #9a7848;
+  padding: 18px;
+  margin: 25px 0;
+  line-height: 1.7;
+}
+
+.consent-form {
+  margin-top: 35px;
+}
+
+.consent-form fieldset {
+  min-width: 0;
+  border: 1px solid #c9bfb1;
+  border-radius: 10px;
+  padding: 24px;
+  margin: 25px 0;
+}
+
+.consent-form legend {
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 0 8px;
+  color: #49372c;
+}
+
+.consent-form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.consent-form input:not([type="checkbox"]),
+.consent-form select,
+.consent-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  box-sizing: border-box;
+  padding: 14px;
+  margin-top: 8px;
+  font: inherit;
+  font-size: 16px;
+  color: #171717;
+  background: #fff;
+  border: 1px solid #b9b0a4;
+  border-radius: 6px;
+}
+
+.consent-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.consent-form .consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  line-height: 1.6;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.consent-form .consent-label input {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  margin: 2px 0 0;
+  accent-color: #9a7848;
+}
+
+.consent-form ul {
+  padding-left: 22px;
+  line-height: 1.8;
+}
+
+.consent-form input:focus-visible,
+.consent-form textarea:focus-visible {
+  outline: 3px solid #9a7848;
+  outline-offset: 3px;
+}
+
+.consent-form button[type="submit"] {
+  width: 100%;
+  min-height: 54px;
+  white-space: normal;
+}
+
+.consent-form button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* MOBILE PHONES */
+
+@media (max-width: 650px) {
+
+  .consent-section {
+    padding: 45px 16px;
+  }
+
+  .consent-section h1 {
+    font-size: clamp(1.9rem, 8vw, 2.7rem);
+  }
+
+  .consent-form fieldset {
+    padding: 18px 14px;
+    margin: 20px 0;
+  }
+
+  .consent-form legend {
+    font-size: 1rem;
+  }
+
+  .consent-form .consent-label {
+    padding: 14px 0;
+  }
+
+  .consent-form button[type="submit"] {
+    font-size: 15px;
+    padding: 16px;
+  }
+}
+
+.consent-navigation {
+  background: #f7f3ec;
+  padding: 20px;
+}
+
+.consent-navigation a {
+  color: #49372c;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
