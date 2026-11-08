@@ -1332,3 +1332,22 @@ p { margin-bottom: 18px; }
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+
+/* CONSENT FORM — SELECTED PERMISSIONS */
+
+.consent-form .consent-label:has(
+  input[name="permissions"]:checked
+) {
+  background: #eee5d7;
+  border-radius: 8px;
+  padding: 14px 12px;
+}
+
+.consent-form input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.consent-form .consent-label:focus-within {
+  outline: 2px solid #9a7848;
+  outline-offset: 3px;
+}

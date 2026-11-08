@@ -326,6 +326,19 @@
     value="1.0"
   >
 
+<label for="case-reference">
+  Advocacy case reference (if provided)
+</label>
+
+<input
+  type="text"
+  id="case-reference"
+  name="caseReference"
+  placeholder="e.g. AEL-2026-001"
+  autocomplete="off"
+>
+
+
 </fieldset>
 
 <p class="consent-notice">
@@ -339,7 +352,6 @@
 <button
   type="submit"
   class="button button-primary"
-  disabled
 >
   SUBMIT SIGNED AUTHORITY
 </button>
@@ -355,6 +367,67 @@
 
 
 </form>
+
+<script>
+  const consentForm = document.getElementById(
+    "advocacy-consent-form"
+  );
+
+  consentForm.addEventListener("submit", function(event) {
+
+    // Check electronic signature
+    const residentName = consentForm
+      .querySelector("#resident-name")
+      .value.trim().replace(/\s+/g, " ").toLowerCase();
+
+    const signatureName = consentForm
+      .querySelector("#signature-name")
+      .value.trim().replace(/\s+/g, " ").toLowerCase();
+
+    if (residentName !== signatureName) {
+      event.preventDefault();
+
+      alert(
+        "Your electronic signature must match your full legal name."
+      );
+
+      consentForm.querySelector("#signature-name").focus();
+      return;
+    }
+
+    // Check at least one permission is selected
+    const permissions = consentForm.querySelectorAll(
+      'input[name="permissions"]:checked'
+    );
+
+    if (permissions.length === 0) {
+      event.preventDefault();
+
+      alert(
+        "Please select at least one advocacy permission."
+      );
+
+      consentForm.querySelector(
+        ".consent-permissions"
+      ).scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+      });
+
+      return;
+    }
+
+    // Prevent repeated submissions
+    const submitButton = consentForm.querySelector(
+      'button[type="submit"]'
+    );
+
+    submitButton.disabled = true;
+    submitButton.textContent = "SUBMITTING...";
+
+  });
+</script>
+
 
 
       </div>
